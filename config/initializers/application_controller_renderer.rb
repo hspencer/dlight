@@ -4,3 +4,5 @@
 #   http_host: 'example.org',
 #   https: false
 # )
+
+URL_WIO_MIDDLEWARE = "http://wio.rizoma.io"
