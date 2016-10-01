@@ -12,7 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require colorpicker.js
 //= require kontrol.js
+//= require colors.js
+//= require jqColorPicker.js
 //= require_tree .
 

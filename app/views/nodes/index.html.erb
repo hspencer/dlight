@@ -11,9 +11,42 @@
     </div>
     <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
       <div class="panel-body">
-           
-      </div>
+        <div style="float:left;width: 33%;text-align:center;">
+          <input id="servo1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max=360 value="0">
+        </div>
+        <div style="float:left;width: 33%;text-align:center;" class="for_color">
+          colorasd
+        </div>        
+        <div style="float:left;width: 33%;text-align:center;">
+          <input id="servo2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max=360 value="0">
+        </div>
     </div>
   </div>
   <% end %>
 </div>
+
+<script type="text/javascript">
+  
+  $(".dial").dial({ fgColor:"#222222", bgColor:"#EEEEEE", thickness : .4, cursor : 30, displayPrevious: true, 
+    change : function (value) {
+      console.log("change : ", value);
+  }}).css({display:'inline',padding:'0px 10px'});
+         
+  $('.for_color').colorPicker({
+    renderCallback: function($elm, toggled) {
+      if (toggled === true) { // simple, lightweight check
+          console.log("1");
+      } else if (toggled === false) {
+          console.log("2");
+      } else {
+
+      }
+    },
+    buildCallback: function($elm) {
+      console.log("4");
+    },
+    positionCallback: function($elm) {
+      console.log("5");
+    }    
+});
+</script>
