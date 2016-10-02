@@ -13,7 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require kontrol.js
-//= require colors.js
-//= require jqColorPicker.js
+//= require minicolors.js
 //= require_tree .
-

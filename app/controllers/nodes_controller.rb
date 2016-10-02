@@ -7,17 +7,19 @@ class NodesController < ApplicationController
 		end
 	end
 
-	def get_nodes
-		
+	def set_color
+		begin 
+			query = RestClient.get "http://wio.rizoma.io/v1/node/GenericAInA0/analog/#{params[:color]}", {:Authorization => " token #{session[:node]}"}		
+			@result = JSON.parse(query.body)['nodes']
+		end
 	end
 
-	def get_state
-
-	end
-
-	def set_state
-
-	end
+	def set_position
+		begin 
+			query = RestClient.get "http://wio.rizoma.io/v1/node/GenericAInA#{params[:iservo]}/servo/#{params[:pos]}", {:Authorization => " token #{session[:node]}"}		
+			@result = JSON.parse(query.body)['nodes']
+		end
+	end	
 
 	def set_online
 
