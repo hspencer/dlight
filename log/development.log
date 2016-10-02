@@ -7489,3 +7489,157 @@ Processing by NodesController#index as HTML
 Completed 200 OK in 222ms (Views: 96.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for ::1 at 2016-10-02 19:44:52 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 743ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 19:45:04 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 534ms (Views: 34.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 19:46:29 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 156ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=4f9e7a8a8b284b6bb4bd3e47cff130cc&iservo=1&pos=78" for ::1 at 2016-10-02 19:46:36 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"4f9e7a8a8b284b6bb4bd3e47cff130cc", "iservo"=>"1", "pos"=>"78"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 52ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=4f9e7a8a8b284b6bb4bd3e47cff130cc&iservo=1&pos=198" for ::1 at 2016-10-02 19:46:38 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"4f9e7a8a8b284b6bb4bd3e47cff130cc", "iservo"=>"1", "pos"=>"198"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 53ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=4f9e7a8a8b284b6bb4bd3e47cff130cc&iservo=1&pos=264" for ::1 at 2016-10-02 19:46:38 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"4f9e7a8a8b284b6bb4bd3e47cff130cc", "iservo"=>"1", "pos"=>"264"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 56ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=4f9e7a8a8b284b6bb4bd3e47cff130cc&iservo=1&pos=339" for ::1 at 2016-10-02 19:46:39 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"4f9e7a8a8b284b6bb4bd3e47cff130cc", "iservo"=>"1", "pos"=>"339"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 88ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=4f9e7a8a8b284b6bb4bd3e47cff130cc&iservo=2&pos=246" for ::1 at 2016-10-02 19:46:41 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"4f9e7a8a8b284b6bb4bd3e47cff130cc", "iservo"=>"2", "pos"=>"246"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-02 19:47:05 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1025ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=1&pos=65" for ::1 at 2016-10-02 19:47:09 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"1", "pos"=>"65"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 61ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=1&pos=135" for ::1 at 2016-10-02 19:47:10 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"1", "pos"=>"135"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=1&pos=221" for ::1 at 2016-10-02 19:47:10 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"1", "pos"=>"221"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=1&pos=267" for ::1 at 2016-10-02 19:47:11 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"1", "pos"=>"267"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 88ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=2&pos=76" for ::1 at 2016-10-02 19:47:18 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"2", "pos"=>"76"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 58ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=2&pos=142" for ::1 at 2016-10-02 19:47:19 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"2", "pos"=>"142"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 92ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=2&pos=240" for ::1 at 2016-10-02 19:47:20 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"2", "pos"=>"240"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 55ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=2&pos=240" for ::1 at 2016-10-02 19:47:37 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"2", "pos"=>"240"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 57ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=671d117e39b9ca480a132e61175c543a&iservo=2&pos=11" for ::1 at 2016-10-02 19:47:39 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"671d117e39b9ca480a132e61175c543a", "iservo"=>"2", "pos"=>"11"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 108ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=a087e596dd4dc426b93247895a526930&iservo=1&pos=123" for ::1 at 2016-10-02 19:47:46 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "iservo"=>"1", "pos"=>"123"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 57ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=a087e596dd4dc426b93247895a526930&iservo=1&pos=246" for ::1 at 2016-10-02 19:47:48 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "iservo"=>"1", "pos"=>"246"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=a087e596dd4dc426b93247895a526930&iservo=2&pos=115" for ::1 at 2016-10-02 19:47:50 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "iservo"=>"2", "pos"=>"115"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 53ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_color.js?node=a087e596dd4dc426b93247895a526930&color=%23853A3A&opacity=1" for ::1 at 2016-10-02 19:47:54 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "color"=>"#853A3A", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 56ms (ActiveRecord: 0.0ms)
+
+
