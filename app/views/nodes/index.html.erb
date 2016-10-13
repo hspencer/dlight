@@ -1,24 +1,28 @@
-
+<header>
+  <h1>EOS</h1>
+</header>
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <% for node in @nodes %>
-      <div class="panel-heading" role="tab" id="heading<%= node['node_sn'] %>">
+      
+      <div class="panel-heading <%= online_str(node['online']) %>" role="tab" id="heading<%= node['node_sn'] %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>">
         <h4 class="panel-title">
-          <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>">
+          <span class="node-title">
             <%= online_str(node['online']) %> - <%= node['name'] %> 
-          </a>
+          </span>
         </h4>
       </div>
+      
 
       <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
         <div class="panel-body form-group">
           <div class="col-md-4 col-xs-6" style="text-align: center;">
-            <input id="servo_1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max=360 value="0">
+            <input id="servo_1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
           </div>
           <div class="col-md-4 col-xs-6" style="text-align: center;">
-            <input id="servo_2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max=360 value="0">
+            <input id="servo_2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
           </div>
-          <div class="col-md-4 col-xs-1">
+          <div class="col-md-4 col-xs-12 color-input">
             <input id="color_<%= node['node_sn'] %>" class="for_color form-control " >
           </div>          
         </div>
