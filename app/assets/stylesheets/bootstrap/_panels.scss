@@ -16,6 +16,11 @@
 .panel-body {
   padding: $panel-body-padding;
   @include clearfix;
+  box-shadow: inset 0 0 30px $gray-base;
+
+  &.form-group{
+    margin-bottom: 0 !important;
+  }
 }
 
 // Optional heading
@@ -238,6 +243,17 @@
     + .panel-collapse > .panel-body,
     + .panel-collapse > .list-group {
       border-top: 1px solid $panel-inner-border;
+    }
+
+    &:hover,
+    &:focus{
+      background-color: mix($brand-primary, $gray-dark, 20%);
+    }
+
+    h4{
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 900;
     }
   }
 

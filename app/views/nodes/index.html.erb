@@ -1,68 +1,67 @@
 <div class='container'>
   <header>
-  <h1><span>D</span>light</h1>
+    <h1 class='brand'><span class='iso'>D</span>light</h1> 
+    <h2 class="tagline hidden-xs hidden-sm">domotic lighting system</h2>
   </header>
   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <div class="panel panel-default">
-      <% for node in @nodes %>
-      
-      <div class="panel-heading <%= online_str(node['online']) %>" role="tab" id="heading<%= node['node_sn'] %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>">
-        <h4 class="panel-title">
-          <span class="node-title">
-            <%= online_str(node['online']) %> - <%= node['name'] %> 
-          </span>
-        </h4>
-      </div>
-      
-
-      <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
-        <div class="panel-body form-group">
-          <div class="col-md-4 col-xs-6" style="text-align: center;">
-            <input id="servo_1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
-          </div>
-          <div class="col-md-4 col-xs-6" style="text-align: center;">
-            <input id="servo_2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
-          </div>
-          <div class="col-md-4 col-xs-12 color-input">
-            <input id="color_<%= node['node_sn'] %>" class="for_color form-control " >
-          </div>          
-        </div>
-      </div>
-      <% end %>
-    </div>
+     <% for node in @nodes %>
+     <div class="panel-heading <%= online_str(node['online']) %>" role="tab" id="heading<%= node['node_sn'] %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>"><span class='status-indicator <%= online_str(node['online']) %>'></span>
+      <h4 class="panel-title">
+       <span class="node-title">
+        <%= node['name'] %> 
+      </span>
+    </h4>
   </div>
+
+  <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
+   <div class="panel-body form-group">
+    <div class="col-md-4 col-xs-6" style="text-align: center;">
+     <input id="servo_1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
+   </div>
+   <div class="col-md-4 col-xs-6" style="text-align: center;">
+     <input id="servo_2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
+   </div>
+   <div class="col-md-4 col-xs-12 color-input">
+     <input type="hidden" id="color_<%= node['node_sn'] %>" class="for_color form-control " >
+   </div>          
+ </div>
+</div>
+<% end %>
+</div>
+</div>
 </div>
 
 <script type="text/javascript">
-  $(".dial").dial({ fgColor:"#222222", bgColor:"#EEEEEE", thickness : .4, cursor : 30, displayPrevious: true, 
-    release : function (value) {
-      id_node=$(this)[0].i[0].id.split("_")[2]
-      index_servo=$(this)[0].i[0].id.split("_")[1]
-      $.ajax({
-        url: "<%= set_position_url() %>.js",
-        context: document.body,
-        data: {node: id_node, iservo: index_servo, pos: value}
-      }).done(function() {
-        console.log("ok-!")
-      });            
-    }
-  }).css({display:'inline',padding:'0px 10px'});
+ $(".dial").dial({ fgColor:"#E6D600", bgColor:"#000", thickness : .1, cursor : 20, displayPrevious: true, 
+  release : function (value) {
+   id_node=$(this)[0].i[0].id.split("_")[2]
+   index_servo=$(this)[0].i[0].id.split("_")[1]
+   $.ajax({
+    url: "<%= set_position_url() %>.js",
+    context: document.body,
+    data: {node: id_node, iservo: index_servo, pos: value}
+  }).done(function() {
+    console.log("ok-!")
+  });            
+}
+}).css({display:'inline',padding:'0px 10px'});
 
-  $(".for_color").minicolors({
-    changeDelay: 600,
-    letterCase: 'uppercase',
-    theme: 'bootstrap',
-    change: function(color, opacity) {
-      id_node_color=$(this).attr("id").split("_")[1]
-      $.ajax({
-        url: "<%= set_color_url() %>.js",
-        context: document.body,
-        data: {node: id_node_color, color: color, opacity: opacity}
-      }).done(function() {
-        console.log("ok-!")
-      });      
-    }
-  });  
+ $(".for_color").minicolors({
+  changeDelay: 600,
+  letterCase: 'uppercase',
+  theme: 'bootstrap',
+  change: function(color, opacity) {
+   id_node_color=$(this).attr("id").split("_")[1]
+   $.ajax({
+    url: "<%= set_color_url() %>.js",
+    context: document.body,
+    data: {node: id_node_color, color: color, opacity: opacity}
+  }).done(function() {
+    console.log("ok-!")
+  });      
+}
+});  
 
 
 </script>

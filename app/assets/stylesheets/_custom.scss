@@ -5,47 +5,96 @@
 
 // DLight custom
 
+header{
+    position: relative;
+}
+
+.brand, .tagline{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .41ex;
+    color: transparent;
+    transition: text-shadow ease 1s;
+}
+
+h1.brand{
+    text-shadow: 0 0 0 $white;
+    .iso{
+        font-weight: 700;
+        text-shadow: 0 0 10px $brand-primary;
+    }
+
+    &:hover{
+        text-shadow: 0 0 10px $white;
+        .iso{
+            text-shadow: 0 0 0 $brand-primary;
+        }
+    }
+}
+
+h2.tagline{
+    position: absolute;
+    right: 0;
+    text-shadow: 0 0 10px $black;
+    letter-spacing: .41ex;
+    &:hover{
+        color: $black;
+        text-shadow: 0 0 0 $black;
+    }
+}
+
+.status-indicator{
+    display: inline-block;
+    @include size(8px, 8px);
+    border-radius: 50%;
+    border: 1px solid $gray-base;
+    box-shadow: inset 1px 1px 2px $black;
+    margin: 0 1em 0 0;
+    &.online{
+        background-color: $white;
+        box-shadow: 0 0 7px transparentize($white, .8);
+    }
+    &.offline{
+       background-color: $black; 
+    }
+}
+
 .form-signin {
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-}
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-  margin-bottom: 10px;
-}
-.form-signin .checkbox {
-  font-weight: normal;
-}
-.form-signin .form-control {
-  position: relative;
-  height: auto;
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 10px;
-  font-size: 16px;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    .form-signin-heading,
+    .checkbox {
+        margin-bottom: 10px;
+    }
+    .checkbox{
+        font-weight: normal;
+    }
+    .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+        &:focus {
+            z-index: 2;
+        }
+    }
+    input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
 }
 
-
-.bmd-cp-window *::-moz-focus-inner{
-    border:0;
-    padding:0;
-    outline:0
-}
 
 .bmd-cp-window{
   font-family:Tahoma;
@@ -96,10 +145,3 @@
   padding-top: 3em;
 }
 
-.panel-default > .panel-heading {
-	&.offline{
-  		:before{
-        content: ":(";
-      }
-	}
-}
