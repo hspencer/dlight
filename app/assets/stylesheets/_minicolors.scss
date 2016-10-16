@@ -27,6 +27,8 @@
     left: 0;
     right: 0;
     bottom: 0;
+    min-height: 120px;
+    border: 2px solid $black;
 }
 
 .minicolors input[type=hidden] + .minicolors-swatch {
@@ -329,4 +331,4 @@
 }
 .minicolors-theme-semanticui input {
     text-indent: 30px;
-}
+}	

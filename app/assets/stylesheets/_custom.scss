@@ -1,0 +1,196 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// DLight custom
+
+header{
+    position: relative;
+}
+
+.brand, .tagline{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .41ex;
+    color: transparent;
+    transition: all ease 1s;
+}
+
+h1.brand{
+    text-shadow: 0 0 0 $white;
+    transition: all ease 1s;
+    .iso{
+        transition: all ease 1s;
+        font-weight: 900;
+        text-shadow: 0 0 10px $brand-primary;
+    }
+
+    &:hover{
+        text-shadow: 0 0 10px $white;
+        .iso{
+            color: $brand-primary;
+            text-shadow: 2px 2px 0 $black;
+        }
+    }
+}
+
+h2.tagline{
+    position: absolute;
+    right: 0;
+    text-shadow: 0 0 7px $white;
+    letter-spacing: .41ex;
+    &:hover{
+        color: $white;
+        text-shadow: 0 0 0 $white;
+    }
+}
+
+.status-indicator{
+    display: inline-block;
+    @include size(8px, 8px);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, .2); ;
+    box-shadow: inset 1px 1px 2px $black;
+    margin: 0 1em 0 0;
+    &.online{
+        background-color: $white;
+        box-shadow: 0 0 7px transparentize($white, .8);
+    }
+    &.offline{
+       background-color: rgba(0, 0, 0, .1); 
+    }
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    .form-signin-heading,
+    .checkbox {
+        margin-bottom: 10px;
+    }
+    .checkbox{
+        font-weight: normal;
+    }
+    .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+        &:focus {
+            z-index: 2;
+        }
+    }
+    input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.nodes{
+    .form-group{
+        label{
+            font-weight: 500;
+            color: $white;
+            text-shadow: 1px 1px 0 $black;
+        }
+    }
+}
+
+
+/*
+
+WTF is .bmd ?
+
+
+.bmd-cp-window{
+  font-family:Tahoma;
+  background-color:#333;
+  display:none;
+  left:0;
+  top:0;
+  position:absolute;
+  z-index:515;
+  -webkit-box-shadow:0 0 10px rgba(50,50,50,0.5);
+  -moz-box-shadow:0 0 10px rgba(50,50,50,0.5);
+  box-shadow:0 0 10px rgba(50,50,50,0.5)
+}
+
+.bmd-cp-container{
+  position:relative;
+  padding:5px;
+  margin:0;
+}
+
+.bmd-cp-fullscreen>.bmd-cp-container{
+  padding:10px;
+}
+.bmd-cp-container button[class^='bmd-cp-button-']{
+  background-repeat:no-repeat;
+  background-position:center center;
+  right:-20px;
+  border:0;
+  margin:0;
+}
+
+
+.bmd-cp-controls-container{text-align:right;padding-top:5px;margin:0}
+.bmd-cp-controls{position:absolute;padding:0;height:20px;width:20px}
+.bmd-cp-container .bmd-cp-button-close{top:5px;background-color:#c0392b;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAChJREFUCNdjAAIHDgYFAQYBBQYOBwaWBgZmBiACMoBcoCBQCqgAqAoAPTcC74JqR1MAAAAASUVORK5CYII=)}
+.bmd-cp-container>.bmd-cp-button-fullscreen{top:26px;background-color:#333;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAChJREFUCNdj+GDDcICHYYEIwwQVBg4HBpYGBjAAMoBcoCBQCqgAqAwAsQ4IWYLWtUcAAAAASUVORK5CYII=)}
+.bmd-cp-controls-container button[class^='bmd-cp-button-'],
+.bmd-cp-controls-container input{position:static;margin:0;padding:5px;outline:0;display:inline-block;border:0}
+.bmd-cp-controls-container button[class^='bmd-cp-button-']{height:27px;width:27px}
+.bmd-cp-controls-container>
+.bmd-cp-button-fullscreen{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACZJREFUCNdjAAIHDgaVCQwiCxh4DjDYfGAAAyADyAUKAqWACoACAJeSB1ELCBg0AAAAAElFTkSuQmCC);background-color:#e36c09}
+.bmd-cp-item-container{width:100%;border-spacing:0;padding:0;margin:0}
+.bmd-cp-item-container td{height:20px;width:20px;cursor:pointer;padding:0;margin:0}
+.bmd-cp-insert-input{vertical-align:top;border:0;display:block;width:80px;height:27px !important;padding:5px !important;font-family:Tahoma;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.bmd-cp-button-accept{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACFJREFUCNdjQAAOBgYBBgYFBgcHBoUGBkEGBi4GBhaENAAfGwF4FBITzQAAAABJRU5ErkJggg==);background-color:#19b597;color:#fff}
+.bmd-cp-button-accept:hover{background-color:#16a085}
+.bmd-cp-button-prefix{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABdJREFUCNdjAAIOBxCy/wAk4QhNEKgKAGsnBS9U7mopAAAAAElFTkSuQmCC);background-color:#7f8c8d;color:#666}
+*/
+
+.color-input{
+  min-height: 140px;
+}
+
+footer{
+    padding: 3rem 0;
+    text-align: center;
+    letter-spacing: .1ex;
+}
+
+// Custom Utilities
+
+.text-shadow-soft{
+  @include text-long-shadow(lighten($brand-primary, 30%), 100, .25, .005, 1);
+}
+
+.text-shadow-hard{
+  @include text-long-shadow($brand-primary, 30, .5, 0.001, 30);
+}
+
+.box-shadow-soft{
+  @include box-long-shadow(lighten($brand-primary, 30%), 100, .25, .005, 1);
+}
+
+.box-shadow-hard{
+  @include box-long-shadow($brand-primary, 30, .5, 0.001, 30);
+}
+
+// above phone size
+@media (min-width: $screen-phone) {
+
+}

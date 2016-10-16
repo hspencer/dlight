@@ -604,7 +604,7 @@
                         ,'margin-left' : '-' + ((this.o.width * 3 / 4 + 2) >> 0) + 'px'
                         ,'border' : 0
                         ,'background' : 'none'
-                        ,'font' : 'bold ' + ((this.o.width / s) >> 0) + 'px Arial'
+                        ,'font' : 'bold ' + ((this.o.width / s) >> 0) + 'px Raleway'
                         ,'text-align' : 'center'
                         ,'color' : this.o.fgColor
                         ,'padding' : '0px'
@@ -735,7 +735,7 @@
                 this.$.css({
                         'margin-top' : '-30px'
                         , 'border' : 0
-                        , 'font' : '11px Arial'
+                        , 'font' : '11px Raleway'
                         });
 
                 this.i.each(
@@ -902,7 +902,7 @@
                             'width' : (s.colWidth - 4 +  s.o.spacing) + 'px'
                             ,'border' : 0
                             ,'background' : 'none'
-                            ,'font' : s.fontSize+'px Arial' //this.fontSize
+                            ,'font' : s.fontSize+'px Raleway' //this.fontSize
                             ,'color' : s.o.fgColor
                             ,'margin' : '0px'
                             ,'padding' : '0px'
