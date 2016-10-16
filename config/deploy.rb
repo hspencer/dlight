@@ -13,9 +13,7 @@ set :repository, 'git@github.com:rodrigomoya/tesape.git'
 set :branch, 'master'
 set :shared_paths, ['config/database.yml', 'log']
 set_default :rvm_path, "/home/ubuntu/.rvm/scripts/rvm"
-#set :bundle_path, '/home/ubuntu/.rvm/gems/ruby-2.3.0/bin/bundle'
-  # For those using RVM, use this to load an RVM version@gemset.
-  invoke :'rvm:use[ruby-2.3.0@default]'
+invoke :'rvm:use[ruby-2.3.0@default]'
 
 task setup: :environment do
   queue! %(mkdir -p "#{deploy_to}/#{shared_path}/tmp/sockets")
@@ -28,11 +26,9 @@ task setup: :environment do
 
   queue! %[mkdir -p "#{deploy_to}/#{shared_path}/config"]
   queue! %[chmod g+rx,u+rwx "#{deploy_to}/#{shared_path}/config"]
-
-  queue! %[touch "#{deploy_to}/#{shared_path}/config/database.yml"]
-  queue! %[touch "#{deploy_to}/#{shared_path}/config/secrets.yml"]
-  queue  %[echo "-----> Be sure to edit '#{deploy_to}/#{shared_path}/config/database.yml' and 'secrets.yml'."]  
 end
+
+set :shared_paths, ['config/database.yml', 'tmp/pids', 'tmp/sockets']
 
 desc 'Deploys the current version to the server.'
 task deploy: :environment do
@@ -42,5 +38,6 @@ task deploy: :environment do
     invoke :'bundle:install'
     invoke :'rails:assets_precompile'
     invoke :'deploy:cleanup'
+    invoke :'puma:phased_restart'
   end
 end
