@@ -11,6 +11,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'redis', '~> 3.0'
 gem 'rest-client'
 gem 'awesome_print'
+gem 'mina'
+gem 'mina-puma', :require => false
+gem 'listen'
 
 group :development do
   gem 'byebug'
