@@ -1,0 +1,20 @@
+// Long Shadows
+// Shadows, longs & shorts, for texts and boxes
+
+@function make-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  $val: 0px 0px rgba($color, $alpha);
+  @for $i from 1 through $length {
+  $temp: #{$i}px #{$i}px rgba($color, $alpha);
+  @if $i > $fade_after {$temp: #{$i}px #{$i}px rgba($color, $alpha - (($i - $fade-after) * $fade-factor))}
+    $val: #{$val}, $temp;
+  }
+  @return $val;
+}
+
+@mixin text-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  text-shadow: make_long_shadow($color, $length, $alpha, $fade-factor, $fade-after);
+}
+
+@mixin box-long-shadow($color, $length, $alpha, $fade-factor, $fade-after) {
+  box-shadow: make_long_shadow($color, $length, $alpha, $fade-factor, $fade-after);
+}

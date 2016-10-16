@@ -15,7 +15,7 @@
   </div>
 
   <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
-   <div class="panel-body form-group">
+   <div class="panel-body">
     <div class="col-md-4 col-xs-6" style="text-align: center;">
      <input id="servo_1_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
    </div>
@@ -23,17 +23,23 @@
      <input id="servo_2_<%= node['node_sn'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
    </div>
    <div class="col-md-4 col-xs-12 color-input">
-     <input type="hidden" id="color_<%= node['node_sn'] %>" class="for_color form-control " >
+      <div class="form-group">
+        <label for="color_<%= node['node_sn'] %>">Color</label>
+        <input type="hidden" id="color_<%= node['node_sn'] %>" class="for_color form-control " >
+      </div>
    </div>          
  </div>
 </div>
 <% end %>
 </div>
 </div>
+<footer>
+  <small>Developed by e[ad] Escuela de Arquitectura y Diseño ~ Pontificia Universidad Católica de Valparaíso</small>
+</footer>
 </div>
 
 <script type="text/javascript">
- $(".dial").dial({ fgColor:"#E6D600", bgColor:"#000", thickness : .1, cursor : 20, displayPrevious: true, 
+ $(".dial").dial({ fgColor:"#F2EF76", bgColor:"#000", thickness : .1, cursor : 20, displayPrevious: true, 
   release : function (value) {
    id_node=$(this)[0].i[0].id.split("_")[2]
    index_servo=$(this)[0].i[0].id.split("_")[1]
@@ -48,7 +54,7 @@
 }).css({display:'inline',padding:'0px 10px'});
 
  $(".for_color").minicolors({
-  changeDelay: 600,
+  changeDelay: 200,
   letterCase: 'uppercase',
   theme: 'bootstrap',
   change: function(color, opacity) {
@@ -62,6 +68,4 @@
   });      
 }
 });  
-
-
 </script>

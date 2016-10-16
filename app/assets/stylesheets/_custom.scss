@@ -20,8 +20,10 @@ header{
 
 h1.brand{
     text-shadow: 0 0 0 $white;
+    transition: text-shadow ease 1s;
     .iso{
-        font-weight: 700;
+        transition: text-shadow ease 1s;
+        font-weight: 900;
         text-shadow: 0 0 10px $brand-primary;
     }
 
@@ -36,7 +38,7 @@ h1.brand{
 h2.tagline{
     position: absolute;
     right: 0;
-    text-shadow: 0 0 10px $black;
+    text-shadow: 0 0 7px $black;
     letter-spacing: .41ex;
     &:hover{
         color: $black;
@@ -145,3 +147,31 @@ h2.tagline{
   padding-top: 3em;
 }
 
+footer{
+    padding: 2rem 0;
+    text-align: center;
+}
+
+// Custom Utilities
+
+.text-shadow-soft{
+  @include text-long-shadow(lighten($brand-primary, 30%), 100, .25, .005, 1);
+}
+
+.text-shadow-hard{
+  @include text-long-shadow($brand-primary, 30, .5, 0.001, 30);
+}
+
+.box-shadow-soft{
+  @include box-long-shadow(lighten($brand-primary, 30%), 100, .25, .005, 1);
+}
+
+.box-shadow-hard{
+  @include box-long-shadow($brand-primary, 30, .5, 0.001, 30);
+}
+
+@media (min-width: $screen-md) {
+    .color-input{
+        padding-top: 0;
+    }
+}
