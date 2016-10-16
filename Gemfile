@@ -18,5 +18,4 @@ gem 'listen'
 group :development do
   gem 'byebug'
   gem 'web-console'
-  gem 'listen'
 end
