@@ -246,11 +246,11 @@
     + .panel-collapse > .list-group {
       border-top: 1px solid $panel-inner-border;
     }
-
-    box-shadow: inset 0 -1px 1px transparentize($black, .1);
+    // box-shadow: inset 0 -1px 1px transparentize($black, .1);
+    
     &:hover,
     &:focus{
-      background-color: mix($brand-primary, $gray-dark, 20%);
+      background-color: mix(#1D93D6, $gray-dark, 20%);
       text-shadow: 2px 2px 0 $black;
       // box-shadow: inset 0 0 2px transparentize($white, .1);
       &:after{

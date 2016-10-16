@@ -10,14 +10,13 @@ $bootstrap-sass-asset-helper: false !default;
 //## Gray and brand colors for use across Bootstrap.
 
 
-
-$gray-base:              #28263C !default;
-$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              #312F45 !default;   // #333
-$gray:                   #504D66 !default;
-$gray-light:             lighten($gray, 13.5%) !default;   // #999
-$gray-lighter:           #EBEBEB !default; // #eee
 $black:					#0F0620 !default;
+$gray-base:             #28263C !default;
+$gray-darker:           lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:             #312F45 !default;   // #333
+$gray:                  #666 !default;
+$gray-light:            lighten($gray, 13.5%) !default;   // #999
+$gray-lighter:			#EBEBEB !default; // #eee
 $white:					#F2EFF9 !default;
 
 $brand-primary:         #F2EF76 !default;
@@ -32,12 +31,12 @@ $brand-danger:          #E74C3C !default;
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               $gray-darker !default;
+$body-bg:               #15232D !default;
 //** Global text color on `<body>`.
 $text-color:            $white !default;
 
 //** Global textual link color.
-$link-color:            desaturate(lighten($brand-success, 10%),10%) !default;
+$link-color:            #FF9F32 !default;
 //** Link hover color set via `darken()` function.
 $link-hover-color:      $link-color !default;
 //** Link hover decoration.
@@ -708,7 +707,7 @@ $list-group-link-heading-color: darken($link-color, 5%) !default;
 //
 //##
 
-$panel-bg:                    $gray-dark !default;
+$panel-bg:                    #193549 !default;
 $panel-body-padding:          15px !default;
 $panel-heading-padding:       15px 20px !default;
 $panel-footer-padding:        $panel-heading-padding !default;
@@ -716,11 +715,11 @@ $panel-border-radius:         $border-radius-base !default;
 
 //** Border color for elements within panels
 $panel-inner-border:          $black !default;
-$panel-footer-bg:             $gray-base !default;
+$panel-footer-bg:             $gray !default;
 
 $panel-default-text:          $text-color !default;
-$panel-default-border:        $gray !default;
-$panel-default-heading-bg:    $gray-dark !default;
+$panel-default-border:        rgba(0, 0, 0, .2) !default;
+$panel-default-heading-bg:    #193549 !default;
 
 $panel-primary-text:          $white !default;
 $panel-primary-border:        $brand-primary !default;
