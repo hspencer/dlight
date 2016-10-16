@@ -7643,3 +7643,24 @@ No template found for NodesController#set_color, rendering head :no_content
 Completed 204 No Content in 56ms (ActiveRecord: 0.0ms)
 
 
+Started GET "/set_position.js?node=a087e596dd4dc426b93247895a526930&iservo=1&pos=107" for ::1 at 2016-10-02 19:48:40 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "iservo"=>"1", "pos"=>"107"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 54ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_color.js?node=a087e596dd4dc426b93247895a526930&color=%23C74949&opacity=1" for ::1 at 2016-10-02 19:48:44 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "color"=>"#C74949", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 67ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/set_position.js?node=a087e596dd4dc426b93247895a526930&iservo=2&pos=248" for ::1 at 2016-10-02 19:48:47 -0300
+Processing by NodesController#set_position as JS
+  Parameters: {"node"=>"a087e596dd4dc426b93247895a526930", "iservo"=>"2", "pos"=>"248"}
+No template found for NodesController#set_position, rendering head :no_content
+Completed 204 No Content in 87ms (ActiveRecord: 0.0ms)
+
+
