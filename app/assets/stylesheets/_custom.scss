@@ -97,6 +97,27 @@ h2.tagline{
     }
 }
 
+.nodes{
+    .form-group{
+        label{
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $white;
+            text-shadow: 1px 1px 0 $black;
+        }
+    }
+}
+
+
+
+
+
+
+
+/*
+
+WTF is .bmd ?
+
 
 .bmd-cp-window{
   font-family:Tahoma;
@@ -127,6 +148,8 @@ h2.tagline{
   border:0;
   margin:0;
 }
+
+
 .bmd-cp-controls-container{text-align:right;padding-top:5px;margin:0}
 .bmd-cp-controls{position:absolute;padding:0;height:20px;width:20px}
 .bmd-cp-container .bmd-cp-button-close{top:5px;background-color:#c0392b;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAAChJREFUCNdjAAIHDgYFAQYBBQYOBwaWBgZmBiACMoBcoCBQCqgAqAoAPTcC74JqR1MAAAAASUVORK5CYII=)}
@@ -142,14 +165,16 @@ h2.tagline{
 .bmd-cp-button-accept{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAACFJREFUCNdjQAAOBgYBBgYFBgcHBoUGBkEGBi4GBhaENAAfGwF4FBITzQAAAABJRU5ErkJggg==);background-color:#19b597;color:#fff}
 .bmd-cp-button-accept:hover{background-color:#16a085}
 .bmd-cp-button-prefix{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOAQMAAAAlhr+SAAAABlBMVEUAAAD///+l2Z/dAAAAAXRSTlMAQObYZgAAABdJREFUCNdjAAIOBxCy/wAk4QhNEKgKAGsnBS9U7mopAAAAAElFTkSuQmCC);background-color:#7f8c8d;color:#666}
+*/
 
 .color-input{
-  padding-top: 3em;
+  padding-top: 1em;
 }
 
 footer{
-    padding: 2rem 0;
+    padding: 3rem 0;
     text-align: center;
+    text-transform: uppercase;
 }
 
 // Custom Utilities
@@ -170,7 +195,7 @@ footer{
   @include box-long-shadow($brand-primary, 30, .5, 0.001, 30);
 }
 
-@media (min-width: $screen-md) {
+@media (min-width: $screen-phone) {
     .color-input{
         padding-top: 0;
     }
