@@ -19,14 +19,12 @@ header{
 .brand, .tagline{
     display: inline-block;
     text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: .41ex;
-    color: transparent;
-    transition: all ease 1s;
 }
 
 h1.brand{
     text-shadow: 0 0 0 $gray;
+    color: transparent;
+    font-weight: 100;
     transition: all ease 1s;
     text-shadow: 0 0 5px $gray;
     .iso{
@@ -47,12 +45,10 @@ h1.brand{
 h2.tagline{
     position: absolute;
     right: 0;
-    text-shadow: 0 0 7px $gray;
-    letter-spacing: .41ex;
-    &:hover{
-        color: $gray;
-        text-shadow: 0 0 0 $gray;
-    }
+    color: $gray;
+    letter-spacing: .31ex;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .status-indicator{
