@@ -188,6 +188,7 @@ footer{
     .iso{
       display: inline-block;
       @include size(40px, 40px);
+      background-image: url('dlight-logo-bw.png');
     }
 }
 
