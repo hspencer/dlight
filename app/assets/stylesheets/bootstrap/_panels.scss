@@ -254,12 +254,12 @@
       // box-shadow: inset 0 0 2px transparentize($white, .1);
       &:after{
         content: "+";
-        font-weight: 200;
-        font-size: 58px;
+        font-weight: 400;
+        font-size: 36px;
         color: rgba(0, 0, 0, .25);
         position: absolute;
         right: 12px;
-        top: -22px;
+        top: -5px;
       }
     }
 
