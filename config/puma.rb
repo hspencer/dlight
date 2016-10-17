@@ -5,14 +5,13 @@ workers 1
 threads 1, 6
 
 app_dir = File.expand_path("../..", __FILE__)
-shared_dir = "#{app_dir}/shared"
 
 # Default to production
 rails_env = ENV['RAILS_ENV'] || "production"
 environment rails_env
 
 # Set up socket location
-bind "unix://#{app_dir}/tmp/puma.sock"
+bind "unix://home/ubuntu/dlight/puma.sock"
 
 # Logging
 stdout_redirect "#{app_dir}/log/puma.stdout.log", "#{app_dir}/log/puma.stderr.log", true
