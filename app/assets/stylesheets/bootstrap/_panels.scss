@@ -10,6 +10,29 @@
   border: 1px solid $black;
   border-radius: $panel-border-radius;
   @include box-shadow(0 1px 1px rgba(0,0,0,.05));
+  position: relative;
+
+  .panel-heading{
+    &:hover,
+    &:focus{
+      background-color: #D4F1F3;
+      &:after{
+        font-weight: 400;
+        font-size: 36px;
+        color: rgba(0, 0, 0, .25);
+        position: absolute;
+        right: 12px;
+        top: -7px;
+      }
+      &[aria-expanded='true']{
+        &:after{content: "-";}
+        
+      }
+      &[aria-expanded='false']{
+        &:after{content: "+";}
+      }
+    }
+  }
 }
 
 // Panel contents
@@ -35,6 +58,7 @@
 
 // Within heading, strip any `h*` tag of its default margins for spacing.
 .panel-title {
+  position: relative;
   margin-top: 0;
   margin-bottom: 0;
   font-size: ceil(($font-size-base * 1.125));
@@ -246,22 +270,6 @@
       border-top: 1px solid $panel-inner-border;
     }
     // box-shadow: inset 0 -1px 1px transparentize($black, .1);
-    
-    &:hover,
-    &:focus{
-      background-color: #BEEDFF;
-      // text-shadow: 2px 2px 0 $black;
-      // box-shadow: inset 0 0 2px transparentize($white, .1);
-      &:after{
-        content: "+";
-        font-weight: 400;
-        font-size: 36px;
-        color: rgba(0, 0, 0, .25);
-        position: absolute;
-        right: 12px;
-        top: -5px;
-      }
-    }
 
     h4{
       display: inline-block;

@@ -1,10 +1,10 @@
 
 <% for node in @nodes %>
 <div class="panel panel-default">
-   <div class="panel-heading <%= online_str(node["online"]) %>" role="tab" id="heading<%= node['node_sn'] %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>"><span class='status-indicator <%= online_str( node["online"] ) %>'></span>
+   <div class="panel-heading <%= online_str(node["online"]) %>" role="tab" id="heading<%= node['node_sn'] %>" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= node['node_sn'] %>" aria-expanded="true" aria-controls="collapse<%= node['node_sn'] %>">
     <h4 class="panel-title">
-     <span class="node-title">
-
+      <span class='status-indicator <%= online_str( node["online"] ) %>'></span>
+      <span class="node-title">
       <%= node['name'] %> 
     </span>
   </h4>

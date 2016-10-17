@@ -2388,3 +2388,334 @@ No template found for NodesController#set_position, rendering head :no_content
 Completed 204 No Content in 251ms
 
 
+Started GET "/" for ::1 at 2016-10-17 10:44:28 -0300
+Processing by NodesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 24ms
+
+
+Started GET "/login" for ::1 at 2016-10-17 10:44:28 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 692ms (Views: 690.5ms)
+
+
+Started GET "/login" for ::1 at 2016-10-17 10:45:24 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 227ms (Views: 223.2ms)
+
+
+Started POST "/auth" for ::1 at 2016-10-17 10:45:39 -0300
+Processing by UsersController#auth as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QvFtctETcLLICAKQywnfUvRZegAbPJHXexuZuZ4OY36twsTMv2Gm22dJCznfLMeBqlDCA4I9CGio4hPqB7Jhag==", "email"=>"rodrigo@rizoma.io", "pass"=>"123456"}
+{"token"=>"M4XLRRdjvXeQP52AQSCESdeG8R5wMrH4AuvM9cccUso", "user_id"=>"028f4a56940b11e6af7f0a9ebd9fea01"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 538ms
+
+
+Started GET "/" for ::1 at 2016-10-17 10:45:40 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 229ms (Views: 67.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 10:47:38 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 834ms (Views: 28.8ms)
+
+
+Started GET "/set_color.js?node=f6fc498f96c483d1bdee9bd7c6b1dabb&color=%23A82525&opacity=1" for ::1 at 2016-10-17 10:47:52 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"f6fc498f96c483d1bdee9bd7c6b1dabb", "color"=>"#A82525", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 42ms
+
+
+Started GET "/" for ::1 at 2016-10-17 10:54:37 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 2571ms (Views: 2025.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:23:57 -0300
+Processing by NodesController#index as HTML
+Redirected to http://localhost:3000/login
+Filter chain halted as :authenticate_user! rendered or redirected
+Completed 302 Found in 22ms
+
+
+Started GET "/login" for ::1 at 2016-10-17 12:23:57 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 3243ms (Views: 3241.4ms)
+
+
+Started GET "/login" for ::1 at 2016-10-17 12:24:56 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms)
+
+
+Started GET "/login" for ::1 at 2016-10-17 12:24:58 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 82ms (Views: 80.1ms)
+
+
+Started GET "/login" for ::1 at 2016-10-17 12:25:00 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 38ms (Views: 36.7ms)
+
+
+Started GET "/login" for ::1 at 2016-10-17 12:25:01 -0300
+Processing by UsersController#login as HTML
+  Rendering users/login.html.erb within layouts/application
+  Rendered users/login.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 33ms (Views: 31.2ms)
+
+
+Started POST "/auth" for ::1 at 2016-10-17 12:25:11 -0300
+Processing by UsersController#auth as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DF6QB+MGhrEJ55RGFE7gx1sIdUcYNgS7rFlXi4btJvEf08ecmRa4y+XaROamAWMAw+SjVAH9Ya23F+kIKNDFLQ==", "email"=>"rodrigo@rizoma.io", "pass"=>"123456"}
+{"token"=>"M4XLRRdjvXeQP52AQSCESdeG8R5wMrH4AuvM9cccUso", "user_id"=>"028f4a56940b11e6af7f0a9ebd9fea01"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 2475ms
+
+
+Started GET "/" for ::1 at 2016-10-17 12:25:13 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 149ms (Views: 28.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:28:22 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2047ms (Views: 1915.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:28:48 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 165ms (Views: 40.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:28:59 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 958ms (Views: 813.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:30:06 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 1971ms (Views: 1844.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:31:47 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2647ms (Views: 1687.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:33:27 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1939ms (Views: 1818.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:34:10 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2138ms (Views: 2016.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:35:11 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2051ms (Views: 1924.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:35:52 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2021ms (Views: 1886.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:37:56 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 1402ms
+
+
+  
+ActionView::Template::Error (Amount 50% must be between 0 and 1 for `transparentize'):
+    4:     <title>D·LIGHT</title>
+    5:     <meta content="width=device-width,initial-scale=1" name=viewport>
+    6:     <%= csrf_meta_tags %>
+    7: 	 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%= javascript_include_tag 'application'  %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/bootstrap/_panels.scss:18
+app/assets/stylesheets/bootstrap.scss:47
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2242941926912451652_70111781136360'
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.4ms)
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.6ms)
+Started GET "/" for ::1 at 2016-10-17 12:38:11 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 1632ms (Views: 1508.9ms)
+
+
+Started GET "/set_color.js?node=f6fc498f96c483d1bdee9bd7c6b1dabb&color=%23E66A6A&opacity=1" for ::1 at 2016-10-17 12:41:42 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"f6fc498f96c483d1bdee9bd7c6b1dabb", "color"=>"#E66A6A", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 39ms
+
+
+Started GET "/" for ::1 at 2016-10-17 12:41:48 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2097ms (Views: 1958.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:43:08 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2442ms (Views: 1516.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:45:59 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2020ms (Views: 1901.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:47:37 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 910ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  }": expected selector or at-rule, was "}"):
+    4:     <title>D·LIGHT</title>
+    5:     <meta content="width=device-width,initial-scale=1" name=viewport>
+    6:     <%= csrf_meta_tags %>
+    7: 	 <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     <%= javascript_include_tag 'application'  %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/bootstrap/_panels.scss:31
+app/assets/stylesheets/bootstrap.scss:47
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2242941926912451652_70111743588940'
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.8ms)
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /usr/local/var/rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.2ms)
+Started GET "/" for ::1 at 2016-10-17 12:47:48 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1829ms (Views: 1666.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:52:49 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 2452ms (Views: 1647.8ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:55:11 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 2078ms (Views: 1942.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:57:05 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 2122ms (Views: 1999.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 12:59:21 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 2297ms (Views: 1598.6ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 13:00:02 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 2046ms (Views: 1925.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 13:02:14 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2039ms (Views: 1914.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 13:05:27 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2414ms (Views: 1894.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-17 13:05:58 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 139ms (Views: 22.3ms)
+
+
