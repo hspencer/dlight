@@ -21,6 +21,6 @@ pidfile "#{app_dir}/tmp/puma.pid"
 state_path "#{app_dir}/tmp/puma.state"
 activate_control_app
 
-on_worker_boot do
-  ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
-end
+# on_worker_boot do
+#   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+# end
