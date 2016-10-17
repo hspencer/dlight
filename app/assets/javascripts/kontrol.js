@@ -604,7 +604,7 @@
                         ,'margin-left' : '-' + ((this.o.width * 3 / 4 + 2) >> 0) + 'px'
                         ,'border' : 0
                         ,'background' : 'none'
-                        ,'font' : 'bold ' + ((this.o.width / s) >> 0) + 'px Raleway'
+                        ,'font' : '200 ' + ((this.o.width / s) >> 0) + 'px Montserrat'
                         ,'text-align' : 'center'
                         ,'color' : this.o.fgColor
                         ,'padding' : '0px'
@@ -735,7 +735,7 @@
                 this.$.css({
                         'margin-top' : '-30px'
                         , 'border' : 0
-                        , 'font' : '11px Raleway'
+                        , 'font' : '11px Montserrat'
                         });
 
                 this.i.each(
@@ -902,7 +902,7 @@
                             'width' : (s.colWidth - 4 +  s.o.spacing) + 'px'
                             ,'border' : 0
                             ,'background' : 'none'
-                            ,'font' : s.fontSize+'px Raleway' //this.fontSize
+                            ,'font' : s.fontSize+'px Montserrat' //this.fontSize
                             ,'color' : s.o.fgColor
                             ,'margin' : '0px'
                             ,'padding' : '0px'

@@ -58,7 +58,11 @@ GEM
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+<<<<<<< HEAD
     http-cookie (1.0.3)
+=======
+    http-cookie (1.0.2)
+>>>>>>> dev-hspencer-light
       domain_name (~> 0.5)
     i18n (0.7.0)
     jbuilder (2.6.0)

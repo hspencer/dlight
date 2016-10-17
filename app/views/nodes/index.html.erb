@@ -43,12 +43,13 @@
 
 </div>
 <footer>
+  <div class='iso'></div><br>
   <small><strong>D</strong>LIGHT ~ Domotic Lighting System<br><a href="http://www.ead.pucv.cl">e[ad] Escuela de Arquitectura y Diseño</a><br>Pontificia Universidad Católica de Valparaíso</small>
 </footer>
 </div>
 
 <script type="text/javascript">
- $(".dial").dial({ fgColor:"#fefefe", bgColor:"#000", thickness : .021, cursor : 10, displayPrevious: true, 
+ $(".dial").dial({ fgColor:"rgba(0, 0, 0, .75)", bgColor:"rgba(0, 0, 0, .2)", thickness : .021, cursor : 10, displayPrevious: true, 
   release : function (value) {
    id_node=$(this)[0].i[0].id.split("_")[2]
    index_servo=$(this)[0].i[0].id.split("_")[1]
