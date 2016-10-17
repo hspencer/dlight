@@ -21,8 +21,6 @@ pidfile "#{app_dir}/tmp/puma.pid"
 state_path "#{app_dir}/tmp/puma.state"
 activate_control_app
 
-on_worker_boot do
-  require "active_record"
-  ActiveRecord::Base.connection.disconnect! rescue ActiveRecord::ConnectionNotEstablished
-  ActiveRecord::Base.establish_connection(YAML.load_file("#{app_dir}/config/database.yml")[rails_env])
-end
+# on_worker_boot do
+#   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+# end
