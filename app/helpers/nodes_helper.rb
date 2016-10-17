@@ -1,7 +1,7 @@
 module NodesHelper
 
 	def online_str(status)
-		if status == "true"
+		if status == true
 			"online"
 		else
 			"offline"

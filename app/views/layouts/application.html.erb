@@ -9,6 +9,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class='container'>
+      <header>
+        <h1 class='brand'><span class='iso'>D</span>light</h1> 
+        <h2 class="tagline hidden-xs hidden-sm">domotic lighting system</h2>
+      </header>
+      <%= yield %>
+    </div>
+
+    <footer>
+      <div class='iso'></div><br>
+      <small><strong>D</strong>LIGHT ~ Domotic Lighting System<br><a href="http://www.ead.pucv.cl">e[ad] Escuela de Arquitectura y Diseño</a><br>Pontificia Universidad Católica de Valparaíso</small>
+    </footer>    
   </body>
 </html>
