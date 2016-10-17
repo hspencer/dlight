@@ -604,7 +604,7 @@
                         ,'margin-left' : '-' + ((this.o.width * 3 / 4 + 2) >> 0) + 'px'
                         ,'border' : 0
                         ,'background' : 'none'
-                        ,'font' : '200 ' + ((this.o.width / s) >> 0) + 'px Montserrat'
+                        ,'font' : '300 ' + ((this.o.width / s) >> 0) + 'px Montserrat'
                         ,'text-align' : 'center'
                         ,'color' : this.o.fgColor
                         ,'padding' : '0px'
