@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 74.7 82.5" style="enable-background:new 0 0 74.7 82.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Combined-Shape_5_);}
+	.st1{fill:url(#Combined-Shape_6_);}
+	.st2{fill:url(#Combined-Shape_7_);}
+	.st3{fill:url(#Combined-Shape_8_);}
+	.st4{fill:url(#Combined-Shape_9_);}
+</style>
+<title>Logo</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="Logo">
+		
+			<linearGradient id="Combined-Shape_5_" gradientUnits="userSpaceOnUse" x1="-185.3763" y1="154.2553" x2="-185.6774" y2="153.4172" gradientTransform="matrix(43.2243 0 0 -58 8036.6084 8942.7246)">
+			<stop  offset="0" style="stop-color:#0272DA"/>
+			<stop  offset="0.5296" style="stop-color:#02AFDA"/>
+			<stop  offset="1" style="stop-color:#F7EA1C"/>
+		</linearGradient>
+		<path id="Combined-Shape" class="st0" d="M0,44.5V0c0,0,20.5,0,24.5,0S39,0.5,41.8,1L30,58L0,44.5z"/>
+		
+			<linearGradient id="Combined-Shape_6_" gradientUnits="userSpaceOnUse" x1="-186.3153" y1="153.3062" x2="-184.8895" y2="154.2037" gradientTransform="matrix(45.5107 0 0 -57.0255 8501.0342 8791.417)">
+			<stop  offset="0" style="stop-color:#3023AE"/>
+			<stop  offset="0.4821" style="stop-color:#53CBFE"/>
+			<stop  offset="0.7335" style="stop-color:#BDF0FF"/>
+			<stop  offset="1" style="stop-color:#90FFEC"/>
+		</linearGradient>
+		<path id="Combined-Shape_1_" class="st1" d="M74.7,39.3C74.7,18,61.8,4,41.8,1L30,58L74.7,39.3z"/>
+		
+			<linearGradient id="Combined-Shape_7_" gradientUnits="userSpaceOnUse" x1="-184.1521" y1="153.4473" x2="-183.1521" y2="152.4457" gradientTransform="matrix(30 0 0 -38.0124 5524 5883.3901)">
+			<stop  offset="0" style="stop-color:#FFB309"/>
+			<stop  offset="1" style="stop-color:#660E04"/>
+		</linearGradient>
+		<path id="Combined-Shape_2_" class="st2" d="M0,44.5v38c0,0,7.8,0,21.4,0L30,58L0,44.5z"/>
+		
+			<linearGradient id="Combined-Shape_8_" gradientUnits="userSpaceOnUse" x1="-184.2343" y1="153.5127" x2="-184.745" y2="152.3811" gradientTransform="matrix(34.5108 0 0 -36.2853 6421.0483 5610.2388)">
+			<stop  offset="0" style="stop-color:#C96DD8"/>
+			<stop  offset="1" style="stop-color:#3023AE"/>
+		</linearGradient>
+		<path id="Combined-Shape_3_" class="st3" d="M56.5,75.6c11-6.7,17.9-19,18.2-34.9c0-0.5,0-0.9,0-1.4l-33.6,14L56.5,75.6z"/>
+		
+			<linearGradient id="Combined-Shape_9_" gradientUnits="userSpaceOnUse" x1="-184.7082" y1="152.9314" x2="-184.7082" y2="151.6954" gradientTransform="matrix(36.8463 0 0 -28.5123 6844.8008 4417.3892)">
+			<stop  offset="0" style="stop-color:#FBB4D4"/>
+			<stop  offset="0.4325" style="stop-color:#F5515F"/>
+			<stop  offset="1" style="stop-color:#9F031B"/>
+		</linearGradient>
+		<path id="Combined-Shape_4_" class="st4" d="M21.4,82.5c4.4,0,8.1,0,13.6,0c8.3,0,15.4-3,21.5-6.9L41.1,53.4L30,58L21.4,82.5z"/>
+	</g>
+</g>
+</svg>

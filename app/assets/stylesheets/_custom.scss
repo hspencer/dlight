@@ -9,6 +9,13 @@ header{
     position: relative;
 }
 
+.iso{
+  background-image: url('dlight-logo.svg');
+  background-size: 38px 35px;
+  background-position: 0 6px; 
+  background-repeat: no-repeat;
+}
+
 .brand, .tagline{
     display: inline-block;
     text-transform: uppercase;
@@ -19,19 +26,20 @@ header{
 }
 
 h1.brand{
-    text-shadow: 0 0 0 $white;
+    text-shadow: 0 0 0 $gray;
     transition: all ease 1s;
+    text-shadow: 0 0 5px $gray;
     .iso{
+        color: transparent;
         transition: all ease 1s;
-        font-weight: 900;
-        text-shadow: 0 0 10px $brand-primary;
+        text-shadow: none;
+        filter: blur(0);
     }
 
     &:hover{
-        text-shadow: 0 0 10px $white;
+        text-shadow: 0 0 0 $gray;
         .iso{
-            color: $brand-primary;
-            text-shadow: 2px 2px 0 $black;
+          filter: blur(5px);
         }
     }
 }
@@ -39,11 +47,11 @@ h1.brand{
 h2.tagline{
     position: absolute;
     right: 0;
-    text-shadow: 0 0 7px $white;
+    text-shadow: 0 0 7px $gray;
     letter-spacing: .41ex;
     &:hover{
-        color: $white;
-        text-shadow: 0 0 0 $white;
+        color: $gray;
+        text-shadow: 0 0 0 $gray;
     }
 }
 
@@ -52,11 +60,12 @@ h2.tagline{
     @include size(8px, 8px);
     border-radius: 50%;
     border: 1px solid rgba(0, 0, 0, .2); ;
-    box-shadow: inset 1px 1px 2px $black;
+
     margin: 0 1em 0 0;
     &.online{
         background-color: $white;
         box-shadow: 0 0 7px transparentize($white, .8);
+        border: 1px solid rgba(0, 0, 0, .1);
     }
     &.offline{
        background-color: rgba(0, 0, 0, .1); 
@@ -101,13 +110,17 @@ h2.tagline{
 .nodes{
     .form-group{
         label{
-            font-weight: 500;
-            color: $white;
-            text-shadow: 1px 1px 0 $black;
+            font-weight: 600;
+            color: rgba(0, 0, 0, .45);
+            font-size: 13px;
+            text-transform: uppercase;
         }
     }
 }
 
+.node-title{
+  font-weight: 500;
+}
 
 /*
 
@@ -167,9 +180,13 @@ WTF is .bmd ?
 }
 
 footer{
-    padding: 3rem 0;
+    padding: 2rem 0 3rem 0;
     text-align: center;
     letter-spacing: .1ex;
+    .iso{
+      display: inline-block;
+      @include size(40px, 40px);
+    }
 }
 
 // Custom Utilities
