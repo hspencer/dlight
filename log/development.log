@@ -2719,3 +2719,108 @@ Processing by NodesController#index as HTML
 Completed 200 OK in 139ms (Views: 22.3ms)
 
 
+Started GET "/" for ::1 at 2016-10-18 07:12:04 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 1007ms (Views: 803.4ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:14:23 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 223ms (Views: 40.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:16:08 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 846ms (Views: 50.1ms)
+
+
+Started GET "/set_color.js?node=f6fc498f96c483d1bdee9bd7c6b1dabb&color=%23EBEBEB&opacity=1" for ::1 at 2016-10-18 07:17:11 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"f6fc498f96c483d1bdee9bd7c6b1dabb", "color"=>"#EBEBEB", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 46ms
+
+
+Started GET "/set_color.js?node=f6fc498f96c483d1bdee9bd7c6b1dabb&color=%238C6A36&opacity=1" for ::1 at 2016-10-18 07:17:14 -0300
+Processing by NodesController#set_color as JS
+  Parameters: {"node"=>"f6fc498f96c483d1bdee9bd7c6b1dabb", "color"=>"#8C6A36", "opacity"=>"1"}
+No template found for NodesController#set_color, rendering head :no_content
+Completed 204 No Content in 40ms
+
+
+Started GET "/" for ::1 at 2016-10-18 07:18:05 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1817ms (Views: 1624.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:21:19 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 751ms (Views: 75.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:22:20 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2003ms (Views: 1827.3ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:25:50 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 2066ms (Views: 1523.2ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:26:16 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1789ms (Views: 1590.9ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:29:11 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 1792ms (Views: 1622.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:30:55 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 2327ms (Views: 1559.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:31:16 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 1709ms (Views: 1534.5ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:31:56 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 1902ms (Views: 1718.1ms)
+
+
+Started GET "/" for ::1 at 2016-10-18 07:32:07 -0300
+Processing by NodesController#index as HTML
+  Rendering nodes/index.html.erb within layouts/application
+  Rendered nodes/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1766ms (Views: 1575.7ms)
+
+
