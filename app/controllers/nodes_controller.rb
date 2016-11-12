@@ -10,8 +10,8 @@ class NodesController < ApplicationController
 
 	def set_color
 		begin 
-			# query = RestClient.get "http://dlight.io:8080/v1/node/GenericAInA0/analog/#{params[:color]}", {:Authorization => " token #{session[:node]}"}		
-			# @result = JSON.parse(query.body)['nodes']
+			query = RestClient.post "http://dlight.io:8080/v1/node/GroveLedWs2812D0/clear/1/#{params[:color]}?access_token=#{params[:key_node]}",nil
+			@result = JSON.parse(query.body)['nodes']
 		end
 	end
 
