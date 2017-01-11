@@ -8,7 +8,7 @@
 
 - Servidor de administración de equipos y usuarios. Los wio-node (asociados a un usuario) establecen comunicación directamente con este servidor, es el encargado de verificar si un equipo esta o no conectado, administrar los firmware disponibles, actualizar el firmware por medio de FOTA (Firmware Over the Air)
 
-- También dispone de una API para hace las consultas de manera remota (http://seeed-studio.github.io/Wio_Link/)
+- También dispone de una API para hace las consultas de manera remota, en un repositorio público del [Firmware de Wio Link](http://seeed-studio.github.io/Wio_Link/)
 
 - DLight dispone de un WioServer propio (http://dlight.io:8080/) en donde se disponibilizan los webservices
 
