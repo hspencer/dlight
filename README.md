@@ -25,5 +25,6 @@
 
 ###Using GUI libraries
 
-* (https://github.com/aterrien/jQuery-Kontrol)[JQuery Kontrol.js] 
-* (https://github.com/hspencer/reinbou)[F**king Reinbou] 
+- [https://github.com/aterrien/jQuery-Kontrol](JQuery Kontrol.js)
+
+- [https://github.com/hspencer/reinbou](F**king Reinbou)
