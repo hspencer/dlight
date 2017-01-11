@@ -12,6 +12,7 @@
 
   <div id="collapse<%= node['node_sn'] %>" class="panel-collapse collapse out" role="tabpanel" aria-labelledby="heading<%= node['node_sn'] %>">
     <div class="panel-body">
+    <!-- 
     <div class="col-sm-4 col-xs-6">
       <div class="form-group">
         <label for="servo_1_<%= node['node_sn'] %>_<%= node['node_key'] %>">Rotation 1</label><br>
@@ -23,9 +24,18 @@
         <label for="servo_2_<%= node['node_sn'] %>_<%= node['node_key'] %>">Rotation 2</label><br>
         <input id="servo_2_<%= node['node_sn'] %>_<%= node['node_key'] %>" class="dial" data-width="120" data-height="120" data-min=0 data-max="180" value="0">
       </div>
-
     </div>
-    <div class="col-sm-4 col-xs-12">
+    -->
+
+  <div class="col-sm-6 col-xs-12">
+    <div class="form-group">
+      <label for="servos_<%= node['node_sn'] %>_<%= node['node_key'] %>">Orientation</label>
+      <input type="text" id="servos_<%= node['node_sn'] %>_<%= node['node_key'] %>" class="pad" data-width="180" data-height="180" data-min=0 data-max="180" value="0">
+    </div>
+  </div>
+
+    
+    <div class="col-sm-6 col-xs-12">
       <div class="form-group color-input">
         <label for="color_<%= node['node_sn'] %>_<%= node['node_key'] %>">Color</label>
         <input type="hidden" id="color_<%= node['node_sn'] %>_<%= node['node_key'] %>" class="for_color form-control " >
@@ -35,10 +45,10 @@
   </div>
 </div>
 <% end %>
-
+  
 
 <script type="text/javascript">
- $(".dial").dial({ fgColor:"rgba(0, 0, 0, .75)", bgColor:"rgba(0, 0, 0, .2)", thickness : .021, cursor : 10, displayPrevious: true, 
+ /* $(".pad").xy({ fgColor:"rgba(0, 0, 0, .75)", bgColor:"rgba(0, 0, 0, .2)", thickness : .021, cursor : 10, displayPrevious: true, 
   release : function (value) {
 
   id_node=$(this)[0].i[0].id.split("_")[2]
@@ -71,4 +81,18 @@
     });      
   }
 });  
+*/
+
+var $pad = $(".pad")
+.xy({
+    displayPrevious:false
+    , min : -100
+    , max : 100
+    , fgColor:"#222222"
+    , bgColor:"#EEEEEE"
+    /*, change : function (value) {
+     console.log("change : ", value);
+     }*/
+})
+.css({'border':'5px solid #BBB'});
 </script>

@@ -1,24 +1,29 @@
-# README
+# DLight
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Capa Fisica
 
-Things you may want to cover:
+- WioNode con conectividad Wifi.
 
-* Ruby version
+### WioServer
 
-* System dependencies
+- Servidor de administración de equipos y usuarios. Los wio-node (asociados a un usuario) establecen comunicación directamente con este servidor, es el encargado de verificar si un equipo esta o no conectado, administrar los firmware disponibles, actualizar el firmware por medio de FOTA (Firmware Over the Air)
 
-* Configuration
+- También dispone de una Api para hace las consultas de manera remota (http://seeed-studio.github.io/Wio_Link/)
 
-* Database creation
+- DLight dispone de un WioServer propio (http://dlight.io:8080/) en donde se disponibilizan los webservices
 
-* Database initialization
+- Existe una aplicación wio-cli (https://github.com/Seeed-Studio/wio-cli) que permite una comunicación directa con el wio-server.
 
-* How to run the test suite
+### Aplicación Cliente
 
-* Services (job queues, cache servers, search engines, etc.)
+- Desarrollada en rails. Es simplemente un cliente de los webServices que despliega el WioServer.
 
-* Deployment instructions
+- En base al usuario valido, consulta sus equipos y los despliega. Esta aplicación asume que el firmware de los equipos disponibles ha sido seteado previamente.
 
-* ...
+
+
+
+###Using GUI libraries
+
+* (https://github.com/aterrien/jQuery-Kontrol)[JQuery Kontrol.js] 
+* (https://github.com/hspencer/reinbou)[F**king Reinbou] 
